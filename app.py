@@ -32,8 +32,6 @@ features = [
     "Sex",
     "Age",
     "Fare",
-    "FamilySize",
-    "IsAlone"
 ]
 
 X = df[features]
