@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.svm import SVC
 
 # 1. Load dataset
 url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv'
@@ -53,7 +54,7 @@ X_test_scaled = scaler.transform(X_test)
 
 
 # 8. Model training
-model = LogisticRegression(max_iter=1000)
+model = SVC()
 model.fit(X_train_scaled, y_train)
 
 
