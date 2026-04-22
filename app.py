@@ -4,6 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.svm import SVC
+from google import genai
 
 # 1. Load dataset
 url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv'
