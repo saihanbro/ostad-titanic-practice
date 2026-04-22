@@ -27,12 +27,7 @@ df["IsAlone"] = (df["FamilySize"] == 1).astype(int)
 
 
 # 5. Select features
-features = [
-    "Pclass",
-    "Sex",
-    "Age",
-    "Fare",
-]
+features = ["Pclass", "Sex", "Age","Fare"]
 
 X = df[features]
 y = df["Survived"]
@@ -63,3 +58,8 @@ y_pred = model.predict(X_test_scaled)
 # 10. Evaluation
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+
+
+
+
